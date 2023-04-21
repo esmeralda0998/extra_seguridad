@@ -1,72 +1,80 @@
-<footer class="text-center text-lg-start bg-blue-dark ">
-    <!-- Section: Links  -->
-    <br>
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="me-3 text-secondary"></i>Mantente en contacto
-            </h6>
-            <div>
-              <a href="" class="me-5 link-secondary">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="" class="me-5 link-secondary">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="" class="me-5 link-secondary">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="" class="me-4 link-secondary">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <p>
-                para obtener más información, puedes seguirnos por nuestras diferentes redes sociales
-                o enviarnos un  WhatsApp.
-              </p>
-            </div>
-          </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">información</h6>
-            <p><a href="" class="text-reset text-decoration-none" >Ayuda</a></p>
-          </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Conócenos</h6>
-            <p><a [routerLink]="['../acerca']" class="text-reset text-decoration-none">Acerca de Nosotros</a></p>
-            <p><a [routerLink]="['../mision-vision']" class="text-reset text-decoration-none">Misión y vision </a></p>
-          </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-            <p><i class="fas fa-home me-3 text-secondary"></i> Huejutla de Reyes, 43000, MX</p>
-            <p><i class="fas fa-envelope me-3 text-secondary"></i>20191222@uthh.edu.mx.com</p>
-            <p><i class="fas fa-phone me-3 text-secondary"></i> + 52 8128992709</p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+<!-- Navbar-->
+<nav  class="navbar navbar-expand-lg navbar-light  bg-blue-dark1 ">
+    <div class="container-fluid ">
+      <!-- Left elements -->
+      <div class="d-flex ">
+        <!-- Brand -->
+        <a class="navbar-brand  mb-1 d-flex align-items-center" [routerLink]="['./inicio']" href="#">
+          <!--<img src="./assets/logo/goodwill.png" height="30px" width="50px" alt="" loading="lazy"  /-->
+          <img src="./assets/img/p1.jpeg"  width="50px" height="30px">
+        </a>
+
       </div>
-    </section>
-    <!-- Section: Links  -->
-    <!-- Copyright -->
-    <div class="text-center " >
-      <a class="text-light tex" href="./assets/files/AvisoPrivacidad.pdf">Aviso de privacidad</a> | <a class="text-light" href="#">Políticas de Uso</a>
+      <!-- Left elements -->
+  
+      <!-- Search form 
+      <form class="input-group  w-75 p-1  d-none d-sm-flex ">
+        <input autocomplete="off" type="search" class="form-control " placeholder="Escribe algo para buscar"style="min-width: 90px;"/>
+        <button class="btn bg-light border btn-search" type="submit">buscar</button>
+      </form>-->
+      <!-- Center elements -->
+  
+      <!-- Center elements -->
+  
+      <!-- Right elements 
+      <ul class="navbar-nav w-auto flex-row ">
+        <li class="nav-item me-1 w-2 me-lg-1">
+          <a class="nav-link  d-sm-flex align-items-sm-center btn  " href="#">
+            Le gustaria ayudar
+          </a>
+        </li>
+        <li class="nav-item me-1 w-6 me-lg-1">
+          <a class="nav-link d-sm-flex align-items-sm-center btn  " [routerLink]="['./login']" href="#">
+            Acceder
+          </a>
+        </li>
+      </ul>-->
+      
+      <!-- Right elements -->
     </div>
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-      © 2022 Copyright:
-      <a class="text-reset fw-bold" href="#!">veterinaria_esme.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer> 
+
+  </nav>
+ 
+    <nav class="navbar navbar-expand-lg bg-blue-dark2 ">
+      <div class="container-fluid ">
+        <div class="display">
+        <a class="d-inline navbar-brand   name2Logo text-light" [routerLink]="['./inicio']"  href="#"> Esmeralda  </a>
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse text-left navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
+  
+            <li class="nav-item">
+  
+              <a class="nav-link text-light " [routerLink]="['./inicio']" aria-current="page" href="#">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light " [routerLink]="['./mascotas']" href="#">Mascotas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light " [routerLink]="['./registro']" href="#">Registrarse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light " [routerLink]="['./lista-mascotas']" href="#">Lista de mascotas</a>
+            </li>
+            <li class="nav-item">
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
